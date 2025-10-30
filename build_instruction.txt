@@ -1,0 +1,56 @@
+Name: Thatoe Nyi
+I’m Data Analyst/ automation engineer/ web developer
+Photo:  professional_photo.jpg
+
+Description: Technically-minded problem-solver with a strong foundation in workflow automation, data analysis, and web fundamentals. A self-motivated learner dedicated to using technology to build efficient solutions and currently expanding expertise in business intelligence.
+
+Email: thatoebkk@gmail.com
+Phone number: +66 0661076077
+Location: Bangkok, Thailand.
+
+Get to know me: Computer Science Student | Data Analysis & Automation
+
+I am a Computer Science major at Rangsit University, where I am deeply engaged in learning the technical and theoretical fundamentals of software development. This field strongly appeals to my passion for creative problem-solving and building practical, effective solutions.
+Originally from Myanmar, I am driven to make the most of my educational and professional opportunities in Bangkok. I am excited by the fast-paced world of technology and am eager to apply my skills to real-world challenges.
+
+10+ completed Projects. 2+ years experience. 3.98 GPA.
+
+Specialization: Data Analysis and Automation
+Experience level: Entry to Mid
+Education: Computer Science, Rangsit University
+Languages: Myanmar, English
+
+
+Skills: Data Analysis- Excel, PowerBI, Python’s pandas, matplolib, seaborn libraries
+	Programming Languages- Html, CSS, Nextjs, sql, mysql, postgresql, python
+	Automation: n8n 
+
+Resume Section
+
+Professional Experience
+AI/Automation Consultant & Web Developer | Cross Care Medical Services Bangkok, Thailand (Remote) | 2023 - Present
+Developed and implemented no-code automation workflows (n8n) to streamline key business operations, reducing manual data entry and improving efficiency.
+Consulted on AI-driven strategies and data analysis to identify opportunities for process improvement and technical solutions.
+Contributed to the development and maintenance of the company's web presence using foundational HTML, CSS, and JavaScript.
+Collaborated directly with founders in a fast-paced startup environment to define technical requirements and deliver solutions.
+Private Tutor (STEM & IGCSE) | Self-Employed Yangon, Myanmar & Bangkok, Thailand (Hybrid) | 2015 - 2024
+Delivered expert, one-on-one tutoring to a diverse range of students within both the IGCSE and Myanmar government curricula.
+Developed customized lesson plans and learning materials, adapting complex technical and scientific concepts to individual learning styles.
+Managed all aspects of a long-term tutoring business, including scheduling, client communication, and progress tracking.
+
+Education
+Rangsit University | Pathum Thani, Thailand Bachelor of Science in Computer Science 2024 – Present (Expected Graduation: 2027)
+Yangon Technological University | Yangon, Myanmar Studies in Petroleum Engineering 2015 – 2019
+Certifications
+Meta Data Analyst Professional Certificate Coursera | Issued 2025
+Microsoft Power BI Data Analyst Professional Certificate Coursera | Issued 2025
+
+For Portfolio, My python chaser Snake Game, Blood Inventory Management System for Database Design and web development, AI video generator for Nextjs + n8n automations. Also Other automations like Telegram expense bot, gmail auto management, social media content finder. Spreadsheet to social media autoposting. Placeholders for links
+
+For services, Data driven decision making, AI and automation, webdevelopment, database design.
+
+For testimonials, just comment out those parts for now. 
+
+
+
+Remove watermarks and credits at the button. 
