@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Restaurant Booking Management System - Thatoe Nyi</title>
+  <meta name="description" content="Restaurant Booking Management System using Next.js, TypeScript, Supabase, and n8n automation">
+  <meta name="keywords" content="Restaurant Booking, Next.js, TypeScript, Supabase, n8n, Automation">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="index.html#portfolio" class="active"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html#specializations"><i class="bi bi-hdd-stack navicon"></i> Specializations</a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://www.facebook.com/nyinyi.min.1061" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/Thatoe98" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/thatoe-nyi-75a82734b/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:thatoebkk@gmail.com" class="gmail"><i class="bi bi-envelope"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Restaurant Booking Management System</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="current">Restaurant Booking Management System</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/blood-inventory-placeholder.jpg" alt="Restaurant Booking System" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/blood-inventory-placeholder.jpg" alt="Customer Interface" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/blood-inventory-placeholder.jpg" alt="Staff Dashboard" class="img-fluid" loading="lazy">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Full-Stack Web Development & Automation</li>
+                <li><strong>Technologies</strong>: Next.js, TypeScript, Supabase, n8n</li>
+                <li><strong>Database</strong>: PostgreSQL (Real-time)</li>
+                <li><strong>Automation</strong>: n8n Workflow Integration</li>
+                <li><strong>Project date</strong>: 2024 - Present</li>
+                <li><strong>Status</strong>: Active Development</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Project Overview</h2>
+              <p>
+                The Restaurant Booking Management System is a comprehensive full-stack web application designed to streamline the entire reservation process for restaurants. This scalable platform features both a customer-facing web application for easy booking and a dedicated staff management interface for efficient operations management.
+              </p>
+              <p>
+                Built with modern technologies including Next.js, TypeScript, and Supabase, the system leverages real-time database capabilities to handle bookings, table availability, and customer data seamlessly. The integration of n8n automation ensures instant communication with customers through email and messaging platforms, providing a complete end-to-end booking experience.
+              </p>
+
+              <div class="features mt-4">
+                <h3>Technical Highlights</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-layers-fill"></i>
+                      <h4>Next.js Framework</h4>
+                      <p>Built with Next.js 14+ for server-side rendering, optimized performance, and seamless user experience with React components</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-braces"></i>
+                      <h4>TypeScript Integration</h4>
+                      <p>Fully typed codebase using TypeScript for enhanced code quality, developer experience, and early error detection</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                      <i class="bi bi-database-fill"></i>
+                      <h4>Real-time Supabase Database</h4>
+                      <p>Architected using Supabase with PostgreSQL for real-time data synchronization, handling bookings and table availability instantly</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                      <i class="bi bi-lightning-charge-fill"></i>
+                      <h4>n8n Automation Integration</h4>
+                      <p>Integrated n8n workflows to trigger instant reservation confirmations and status updates via email and messaging apps</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="800">
+                      <i class="bi bi-people-fill"></i>
+                      <h4>Dual Interface System</h4>
+                      <p>Separate customer-facing booking interface and comprehensive staff management dashboard for operational efficiency</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="900">
+                      <i class="bi bi-calendar-check"></i>
+                      <h4>Smart Booking Management</h4>
+                      <p>Intelligent table allocation system with real-time availability tracking and conflict prevention</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="system-features mt-4" data-aos="fade-up" data-aos-delay="1000">
+                <h3>System Features</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <h4><i class="bi bi-browser-chrome"></i> Customer Web App</h4>
+                    <ul>
+                      <li>Easy-to-use booking interface with date/time selection</li>
+                      <li>Real-time table availability checking</li>
+                      <li>Guest information management</li>
+                      <li>Instant booking confirmation via email/SMS</li>
+                      <li>Booking modification and cancellation</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4><i class="bi bi-shield-check"></i> Staff Management Interface</h4>
+                    <ul>
+                      <li>Comprehensive booking dashboard with filters</li>
+                      <li>Table layout and availability management</li>
+                      <li>Customer database and history tracking</li>
+                      <li>Waitlist management system</li>
+                      <li>Analytics and reporting tools</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4><i class="bi bi-robot"></i> Automation Features</h4>
+                    <ul>
+                      <li>Automated confirmation emails upon booking</li>
+                      <li>SMS/messaging app notifications</li>
+                      <li>Reminder messages before reservation time</li>
+                      <li>Status update notifications (confirmed, cancelled, etc.)</li>
+                      <li>Follow-up feedback requests</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4><i class="bi bi-database"></i> Database Architecture</h4>
+                    <ul>
+                      <li>Real-time data synchronization with Supabase</li>
+                      <li>Optimized PostgreSQL schema design</li>
+                      <li>Efficient indexing for fast queries</li>
+                      <li>Automatic backup and data recovery</li>
+                      <li>Scalable architecture for growth</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-demonstrated mt-4" data-aos="fade-up" data-aos-delay="1100">
+                <h3>Skills Demonstrated</h3>
+                <ul class="skills-list">
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Full-Stack Development:</strong> End-to-end application development from database to user interface</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Modern Web Frameworks:</strong> Proficiency in Next.js with server-side rendering and API routes</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Type-Safe Programming:</strong> Advanced TypeScript usage for maintainable and scalable code</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Real-time Systems:</strong> Implementation of real-time data synchronization using Supabase</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Workflow Automation:</strong> Integration of n8n for automated communication workflows</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>UX/UI Design:</strong> Creating intuitive interfaces for both customers and staff users</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Thatoe Nyi</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Python Chaser Game - Thatoe Nyi</title>
+  <meta name="description" content="Python Chaser Game showcasing OOP, data structures, algorithms including Dijkstra and A*, using Pygame library">
+  <meta name="keywords" content="Python, Game Development, OOP, Algorithms, Dijkstra, A*, Pygame">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="index.html#portfolio" class="active"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html#specializations"><i class="bi bi-hdd-stack navicon"></i> Specializations</a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://www.facebook.com/nyinyi.min.1061" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/Thatoe98" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/thatoe-nyi-75a82734b/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:thatoebkk@gmail.com" class="gmail"><i class="bi bi-envelope"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Python Chaser Game</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="current">Python Chaser Game</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/snake-game-placeholder.jpg" alt="Python Chaser Game" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/snake-game-placeholder.jpg" alt="Game UI" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/snake-game-placeholder.jpg" alt="Pathfinding Algorithm" class="img-fluid" loading="lazy">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Python Game Development</li>
+                <li><strong>Technologies</strong>: Python, Pygame, OOP, Data Structures</li>
+                <li><strong>Algorithms</strong>: Dijkstra, A* Pathfinding</li>
+                <li><strong>Project date</strong>: 2024</li>
+                <li><strong>Status</strong>: Completed</li>
+                <li><strong>Team</strong>: Collaborative Team Project</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Project Overview</h2>
+              <p>
+                The Python Chaser Game is a comprehensive demonstration of fundamental to intermediate Python programming concepts, including Object-Oriented Programming (OOP), data structures, and advanced algorithms. This collaborative team project showcases the practical application of computer science principles in an engaging game environment.
+              </p>
+              <p>
+                Built using the Pygame library with a custom Python GUI, the game features intelligent pathfinding AI that uses Dijkstra's algorithm and A* (A-star) search algorithms to create challenging gameplay. The project demonstrates proficiency in game development, algorithm implementation, and team collaboration.
+              </p>
+
+              <div class="features mt-4">
+                <h3>Technical Highlights</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-code-square"></i>
+                      <h4>Object-Oriented Programming</h4>
+                      <p>Implemented clean OOP principles with well-structured classes for game entities, including player, enemies, game board, and collision detection systems</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-diagram-3-fill"></i>
+                      <h4>Data Structures & Algorithms</h4>
+                      <p>Utilized advanced data structures including graphs, priority queues, and hash maps to support efficient algorithm implementations</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                      <i class="bi bi-bezier2"></i>
+                      <h4>Dijkstra's Algorithm</h4>
+                      <p>Implemented Dijkstra's shortest path algorithm for optimal pathfinding, enabling enemies to navigate efficiently through the game environment</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                      <i class="bi bi-star-fill"></i>
+                      <h4>A* Pathfinding Algorithm</h4>
+                      <p>Integrated A* search algorithm with heuristic optimization for intelligent enemy AI, providing dynamic and challenging gameplay experiences</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="800">
+                      <i class="bi bi-controller"></i>
+                      <h4>Pygame Library Integration</h4>
+                      <p>Leveraged Pygame for game rendering, event handling, sprite management, and collision detection systems</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="900">
+                      <i class="bi bi-window-desktop"></i>
+                      <h4>Python GUI Development</h4>
+                      <p>Developed custom graphical user interface for game menus, settings, and in-game displays using Python GUI libraries</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-demonstrated mt-4" data-aos="fade-up" data-aos-delay="1000">
+                <h3>Skills Demonstrated</h3>
+                <ul class="skills-list">
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Python Programming:</strong> Basic to intermediate Python concepts including functions, classes, modules, and exception handling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>OOP Principles:</strong> Encapsulation, inheritance, polymorphism, and abstraction in game entity design</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Algorithm Implementation:</strong> Practical implementation of Dijkstra and A* algorithms with optimization</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Data Structures:</strong> Efficient use of lists, dictionaries, sets, graphs, and priority queues</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Game Development:</strong> Pygame library mastery including sprite animation, collision detection, and game loop management</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Team Collaboration:</strong> Effective teamwork, code review, version control, and project coordination</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Thatoe Nyi</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
