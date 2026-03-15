@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Restaurant Booking Management System - Thatoe Nyi</title>
-  <meta name="description" content="Restaurant Booking Management System using Next.js, TypeScript, Supabase, and n8n automation">
-  <meta name="keywords" content="Restaurant Booking, Next.js, TypeScript, Supabase, n8n, Automation">
+  <title>Crimson Palace WebOS - Thatoe Nyi</title>
+  <meta name="description" content="Crimson Palace WebOS: full-stack restaurant operating system with QR ordering, POS, kitchen workflow, dashboard analytics, and inventory intelligence.">
+  <meta name="keywords" content="Restaurant OS, Next.js, TypeScript, Supabase, PostgreSQL, Prisma, QR Ordering, POS, Kitchen Display">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
@@ -61,12 +61,12 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Restaurant Booking Management System</h1>
+        <h1 class="mb-2 mb-lg-0">Crimson Palace WebOS</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li class="current">Restaurant Booking Management System</li>
+            <li class="current">Crimson Palace WebOS</li>
           </ol>
         </nav>
       </div>
@@ -101,15 +101,27 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/blood-inventory-placeholder.jpg" alt="Restaurant Booking System" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/crimson_palace_dashboard.png" alt="Crimson Palace manager dashboard" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/blood-inventory-placeholder.jpg" alt="Customer Interface" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/crimson_palace_inventory.png" alt="Crimson Palace inventory module" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/blood-inventory-placeholder.jpg" alt="Staff Dashboard" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/crimson_palace_kitchen_screen.png" alt="Crimson Palace kitchen display" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/crimson_palace_menu_items.png" alt="Crimson Palace menu admin" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/crimson_palace_pos_staff.png" alt="Crimson Palace POS manual entry" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/crimson_palace_qr_ordering.png" alt="Crimson Palace QR code generator" class="img-fluid" loading="lazy">
                 </div>
 
               </div>
@@ -121,12 +133,12 @@
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
               <h3>Project Information</h3>
               <ul>
-                <li><strong>Category</strong>: Full-Stack Web Development & Automation</li>
-                <li><strong>Technologies</strong>: Next.js, TypeScript, Supabase, n8n</li>
-                <li><strong>Database</strong>: PostgreSQL (Real-time)</li>
-                <li><strong>Automation</strong>: n8n Workflow Integration</li>
-                <li><strong>Project date</strong>: 2024 - Present</li>
-                <li><strong>Status</strong>: Active Development</li>
+                <li><strong>Category</strong>: Full-Stack Restaurant Operations Platform</li>
+                <li><strong>Technologies</strong>: Next.js 14, React 18, TypeScript, Tailwind CSS</li>
+                <li><strong>Backend</strong>: Next.js Route Handlers, Supabase, PostgreSQL RPC</li>
+                <li><strong>Data Model</strong>: Prisma schema + normalized PostgreSQL tables</li>
+                <li><strong>Project date</strong>: 2026</li>
+                <li><strong>Status</strong>: Operational Prototype</li>
               </ul>
             </div>
           </div>
@@ -135,120 +147,99 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Project Overview</h2>
               <p>
-                The Restaurant Booking Management System is a comprehensive full-stack web application designed to streamline the entire reservation process for restaurants. This scalable platform features both a customer-facing web application for easy booking and a dedicated staff management interface for efficient operations management.
+                Crimson Palace WebOS is a full-stack restaurant operating system that unifies customer ordering, cashier operations, kitchen ticket workflows, table service notifications, management dashboards, and inventory visibility into one web platform.
               </p>
               <p>
-                Built with modern technologies including Next.js, TypeScript, and Supabase, the system leverages real-time database capabilities to handle bookings, table availability, and customer data seamlessly. The integration of n8n automation ensures instant communication with customers through email and messaging platforms, providing a complete end-to-end booking experience.
+                The project models a realistic restaurant environment with seeded operational datasets (sales, ingredient usage, payroll, and stock snapshots) while supporting live transactions such as QR ordering, POS order entry, and kitchen state progression.
               </p>
 
               <div class="features mt-4">
-                <h3>Technical Highlights</h3>
+                <h3>Core Modules</h3>
                 <div class="row gy-3">
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-layers-fill"></i>
-                      <h4>Next.js Framework</h4>
-                      <p>Built with Next.js 14+ for server-side rendering, optimized performance, and seamless user experience with React components</p>
+                      <i class="bi bi-grid-1x2-fill"></i>
+                      <h4>Manager Dashboard</h4>
+                      <p>Tracks revenue, gross and operating profit, menu performance, cost breakdowns, and high-priority inventory alerts in one executive view.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-braces"></i>
-                      <h4>TypeScript Integration</h4>
-                      <p>Fully typed codebase using TypeScript for enhanced code quality, developer experience, and early error detection</p>
+                      <i class="bi bi-qr-code-scan"></i>
+                      <h4>QR Ordering & POS</h4>
+                      <p>Supports direct table-based mobile ordering and staff-led POS workflows with shared menu and table models.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-database-fill"></i>
-                      <h4>Real-time Supabase Database</h4>
-                      <p>Architected using Supabase with PostgreSQL for real-time data synchronization, handling bookings and table availability instantly</p>
+                      <i class="bi bi-display-fill"></i>
+                      <h4>Kitchen Display System</h4>
+                      <p>Moves tickets across waiting, in-prep, ready, and served states with frequent polling for real-time operational visibility.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-lightning-charge-fill"></i>
-                      <h4>n8n Automation Integration</h4>
-                      <p>Integrated n8n workflows to trigger instant reservation confirmations and status updates via email and messaging apps</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="800">
-                      <i class="bi bi-people-fill"></i>
-                      <h4>Dual Interface System</h4>
-                      <p>Separate customer-facing booking interface and comprehensive staff management dashboard for operational efficiency</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="900">
-                      <i class="bi bi-calendar-check"></i>
-                      <h4>Smart Booking Management</h4>
-                      <p>Intelligent table allocation system with real-time availability tracking and conflict prevention</p>
+                      <i class="bi bi-box-seam-fill"></i>
+                      <h4>Inventory Oversight</h4>
+                      <p>Surfaces reorder risk, expiry pressure, and daily stock intelligence through alert-first inventory monitoring.</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="system-features mt-4" data-aos="fade-up" data-aos-delay="1000">
-                <h3>System Features</h3>
+              <div class="system-features mt-4" data-aos="fade-up" data-aos-delay="800">
+                <h3>Technical Strengths</h3>
                 <div class="row gy-3">
                   <div class="col-md-6">
-                    <h4><i class="bi bi-browser-chrome"></i> Customer Web App</h4>
+                    <h4><i class="bi bi-diagram-3-fill"></i> Workflow-Centered Architecture</h4>
                     <ul>
-                      <li>Easy-to-use booking interface with date/time selection</li>
-                      <li>Real-time table availability checking</li>
-                      <li>Guest information management</li>
-                      <li>Instant booking confirmation via email/SMS</li>
-                      <li>Booking modification and cancellation</li>
+                      <li>Monolithic full-stack design with clear UI, API, and persistence layering</li>
+                      <li>Operational modules mapped to real restaurant roles and routines</li>
+                      <li>Consistent API success and error contracts for all clients</li>
+                      <li>Selective state persistence based on workflow behavior</li>
                     </ul>
                   </div>
                   <div class="col-md-6">
-                    <h4><i class="bi bi-shield-check"></i> Staff Management Interface</h4>
+                    <h4><i class="bi bi-database-fill"></i> Database and SQL Procedures</h4>
                     <ul>
-                      <li>Comprehensive booking dashboard with filters</li>
-                      <li>Table layout and availability management</li>
-                      <li>Customer database and history tracking</li>
-                      <li>Waitlist management system</li>
-                      <li>Analytics and reporting tools</li>
+                      <li>Normalized schema covering lookup, master, fact, and runtime entities</li>
+                      <li>Transactional order creation via create_customer_order procedure</li>
+                      <li>Kitchen state transitions via set_kitchen_ticket_status procedure</li>
+                      <li>Dedicated notification table and indexes for table service polling</li>
                     </ul>
                   </div>
                   <div class="col-md-6">
-                    <h4><i class="bi bi-robot"></i> Automation Features</h4>
+                    <h4><i class="bi bi-cloud-arrow-down-fill"></i> Data Engineering Discipline</h4>
                     <ul>
-                      <li>Automated confirmation emails upon booking</li>
-                      <li>SMS/messaging app notifications</li>
-                      <li>Reminder messages before reservation time</li>
-                      <li>Status update notifications (confirmed, cancelled, etc.)</li>
-                      <li>Follow-up feedback requests</li>
+                      <li>Dependency-aware seed pipeline from structured CSV sources</li>
+                      <li>Normalization for dates, percentages, currency, and units</li>
+                      <li>Validation pass for counts, ranges, and integrity assumptions</li>
+                      <li>Reproducible time simulation for consistent analytics interpretation</li>
                     </ul>
                   </div>
                   <div class="col-md-6">
-                    <h4><i class="bi bi-database"></i> Database Architecture</h4>
+                    <h4><i class="bi bi-people-fill"></i> Product Thinking</h4>
                     <ul>
-                      <li>Real-time data synchronization with Supabase</li>
-                      <li>Optimized PostgreSQL schema design</li>
-                      <li>Efficient indexing for fast queries</li>
-                      <li>Automatic backup and data recovery</li>
-                      <li>Scalable architecture for growth</li>
+                      <li>Designs for customers, kitchen staff, cashiers, and managers</li>
+                      <li>Combines historical analytics with live transaction processing</li>
+                      <li>Bridges front-of-house operations with stock risk management</li>
+                      <li>Pragmatic tradeoffs: monolith deployment and polling-first realtime</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div class="skills-demonstrated mt-4" data-aos="fade-up" data-aos-delay="1100">
+              <div class="skills-demonstrated mt-4" data-aos="fade-up" data-aos-delay="900">
                 <h3>Skills Demonstrated</h3>
                 <ul class="skills-list">
-                  <li><i class="bi bi-check-circle-fill"></i> <strong>Full-Stack Development:</strong> End-to-end application development from database to user interface</li>
-                  <li><i class="bi bi-check-circle-fill"></i> <strong>Modern Web Frameworks:</strong> Proficiency in Next.js with server-side rendering and API routes</li>
-                  <li><i class="bi bi-check-circle-fill"></i> <strong>Type-Safe Programming:</strong> Advanced TypeScript usage for maintainable and scalable code</li>
-                  <li><i class="bi bi-check-circle-fill"></i> <strong>Real-time Systems:</strong> Implementation of real-time data synchronization using Supabase</li>
-                  <li><i class="bi bi-check-circle-fill"></i> <strong>Workflow Automation:</strong> Integration of n8n for automated communication workflows</li>
-                  <li><i class="bi bi-check-circle-fill"></i> <strong>UX/UI Design:</strong> Creating intuitive interfaces for both customers and staff users</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Full-Stack Engineering:</strong> Unified development across app routes, APIs, and relational persistence.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Domain Modeling:</strong> Restaurant-specific schema design supporting both operations and analytics.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Database Reliability:</strong> SQL procedures for transactional correctness in critical workflows.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Data Pipeline Design:</strong> Structured ingestion and validation from spreadsheet-style sources.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>System Design:</strong> Practical architecture decisions balancing speed, clarity, and operational value.</li>
                 </ul>
               </div>
             </div>

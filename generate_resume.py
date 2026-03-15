@@ -137,7 +137,8 @@ def create_resume():
     elements.append(Paragraph("THATOE NYI", title_style))
     elements.append(Paragraph("Data Analyst | Automation Engineer | Web Developer", subtitle_style))
     elements.append(Paragraph(
-        "Bangkok, Thailand | +66 661076077 | thatoebkk@gmail.com | LinkedIn: thatoe-nyi-75a82734b | GitHub: Thatoe98",
+        "Bangkok, Thailand | +66 661076077 | thatoebkk@gmail.com<br/>"
+        "LinkedIn: thatoe-nyi-75a82734b | GitHub: Thatoe98 | Portfolio: thatoe98.github.io/my_portfolio",
         contact_style
     ))
     
