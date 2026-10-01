@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>RAG Customer-Support Agent with Human Handoff - Thatoe Nyi</title>
+  <meta name="description" content="A Messenger-based RAG customer-support agent with a custom SQLite + NumPy retrieval engine and a Telegram human-handoff bridge.">
+  <meta name="keywords" content="RAG, LLM, Gemini, Customer Support, Human-in-the-Loop, FastAPI, SQLite, Telegram">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="index.html#portfolio" class="active"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html#specializations"><i class="bi bi-hdd-stack navicon"></i> Specializations</a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://www.facebook.com/nyinyi.min.1061" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/Thatoe98" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/thatoe-nyi-75a82734b/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:thatoebkk@gmail.com" class="gmail"><i class="bi bi-envelope"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">RAG Customer-Support Agent with Human Handoff</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="current">RAG Support Agent</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": false,
+                  "speed": 600,
+                  "slidesPerView": 1,
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/rag-support-handoff.svg" alt="RAG customer support pipeline with Telegram human handoff" class="img-fluid" loading="lazy">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: LLM & Agentic RAG — Customer Support</li>
+                <li><strong>Technologies</strong>: Python, FastAPI, Gemini 2.0 Flash, SQLite + NumPy, Telegram Bot API, Facebook Messenger</li>
+                <li><strong>Approach</strong>: Custom retrieval engine (no vector DB dependency) + human handoff bridge</li>
+                <li><strong>Project date</strong>: 2025–2026</li>
+                <li><strong>Status</strong>: Deployed with admin webapp</li>
+                <li><strong>Repository</strong>: <a href="https://github.com/Thatoe98/RAG_Agentic_Customer_Service_Messenger" target="_blank">github.com/Thatoe98/RAG_Agentic_Customer_Service_Messenger</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Project Overview</h2>
+              <p>
+                An AI customer-support bot for Facebook Messenger that answers from a business's own documents using retrieval-augmented generation, and — critically — knows when not to answer. When the retrieved context isn't confident enough to support an answer, the conversation escalates to a human supervisor over Telegram with the full chat transcript, and a simple <code>/done</code> command hands the conversation back to the bot once resolved.
+              </p>
+              <p>
+                Rather than reaching for a managed vector database, I built the retrieval layer myself with SQLite and NumPy: documents are chunked and embedded, and relevant chunks are retrieved by cosine similarity before being passed to Gemini 2.0 Flash for the final answer. A no-code admin webapp lets a non-technical business owner upload knowledge files, retrain the bot's behavior conversationally, and review past conversations and usage — changes apply to the live system prompt instantly, with no redeploy.
+              </p>
+
+              <div class="features mt-4">
+                <h3>Core Modules</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-search"></i>
+                      <h4>Custom RAG Engine</h4>
+                      <p>SQLite + NumPy embedding store with cosine-similarity retrieval — no external vector DB required.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-person-lines-fill"></i>
+                      <h4>Telegram Human Handoff</h4>
+                      <p>Low-confidence conversations escalate to a supervisor with full transcript, bridged back with <code>/done</code>.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                      <i class="bi bi-gear-wide-connected"></i>
+                      <h4>No-Code Admin Webapp</h4>
+                      <p>Upload knowledge files and retrain behavior through chat, with instant effect on the live system prompt.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                      <i class="bi bi-messenger"></i>
+                      <h4>Messenger Integration</h4>
+                      <p>FastAPI backend serves the Facebook Messenger webhook and conversation state.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="system-features mt-4" data-aos="fade-up" data-aos-delay="800">
+                <h3>Technical Strengths</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <h4><i class="bi bi-shuffle"></i> Confidence-Aware Routing</h4>
+                    <ul>
+                      <li>Bot answers directly only when retrieval confidence is high</li>
+                      <li>Ambiguous or out-of-scope questions escalate instead of guessing</li>
+                      <li>Full conversational context passed to the human supervisor</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4><i class="bi bi-tools"></i> Built-From-Scratch Retrieval</h4>
+                    <ul>
+                      <li>Chunking and embedding pipeline without a managed vector DB</li>
+                      <li>SQLite for persistence, NumPy for similarity scoring</li>
+                      <li>Analytics and usage tracking surfaced in the admin panel</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-demonstrated mt-4" data-aos="fade-up" data-aos-delay="900">
+                <h3>Skills Demonstrated</h3>
+                <ul class="skills-list">
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>RAG From First Principles:</strong> Building a retrieval engine with SQLite + NumPy instead of defaulting to a managed vector store.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Human-in-the-Loop Design:</strong> Confidence-based escalation so the bot fails safely instead of hallucinating.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Full-Stack Product Thinking:</strong> A no-code admin layer that makes the system usable by a non-technical business owner.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Messaging Platform Integration:</strong> Facebook Messenger webhook handling and a Telegram operator bridge in one system.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Thatoe Nyi</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

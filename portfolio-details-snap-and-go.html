@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Snap & Go — Vision-Based Self-Checkout - Thatoe Nyi</title>
+  <meta name="description" content="Snap & Go: a BYOD, staff-less grocery self-checkout prototype using a custom YOLOv8 object-detection model, FastAPI inference, and QR slip verification.">
+  <meta name="keywords" content="Computer Vision, YOLOv8, Object Detection, OpenCV, FastAPI, Roboflow, Self-Checkout">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="index.html#portfolio" class="active"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html#specializations"><i class="bi bi-hdd-stack navicon"></i> Specializations</a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://www.facebook.com/nyinyi.min.1061" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/Thatoe98" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/thatoe-nyi-75a82734b/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:thatoebkk@gmail.com" class="gmail"><i class="bi bi-envelope"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Snap & Go — Vision-Based Self-Checkout</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="current">Snap & Go</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": false,
+                  "speed": 600,
+                  "slidesPerView": 1,
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/snap-and-go-cv.svg" alt="Snap & Go object detection on grocery items" class="img-fluid" loading="lazy">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Computer Vision — Object Detection</li>
+                <li><strong>Technologies</strong>: Python, PyTorch (YOLOv8), OpenCV, FastAPI, Roboflow, Supabase, Next.js</li>
+                <li><strong>Model</strong>: YOLOv8n, 50 epochs, Colab T4 GPU</li>
+                <li><strong>Project date</strong>: 2026</li>
+                <li><strong>Status</strong>: Hackathon prototype</li>
+                <li><strong>Repository</strong>: <a href="https://github.com/Thatoe98/snap_and_go_self_checkout_retail_stores" target="_blank">github.com/Thatoe98/snap_and_go_self_checkout_retail_stores</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Project Overview</h2>
+              <p>
+                Snap & Go is a BYOD (bring-your-own-device), staff-less grocery checkout prototype: a shopper scans their own cart with a phone camera, the backend detects every item with a custom-trained YOLOv8 model, and checkout completes with a self-serve PromptPay slip verification — no cashier or barcode gun required.
+              </p>
+              <p>
+                I built the object-detection dataset from scratch: recorded product videos, extracted roughly 100 frames per class, and labelled bounding boxes in Roboflow. To make the model robust to real store lighting, I applied brightness (±25%), blur, and rotation (±15°) augmentation before training YOLOv8n for 50 epochs on a Colab T4 GPU.
+              </p>
+
+              <div class="features mt-4">
+                <h3>Core Modules</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-camera-reels-fill"></i>
+                      <h4>Snapshot Inference</h4>
+                      <p>FastAPI endpoint decodes a JPEG snapshot with OpenCV and runs YOLOv8n with a configurable confidence threshold (0.80).</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-qr-code-scan"></i>
+                      <h4>QR Payment Verification</h4>
+                      <p>Decodes PromptPay payment-slip QR codes (pyzbar) and cross-checks the paid amount against the detected cart total.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                      <i class="bi bi-basket3-fill"></i>
+                      <h4>Product & Price Lookup</h4>
+                      <p>Detected class labels resolve to live product and price data stored in Supabase (Postgres).</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                      <i class="bi bi-phone-fill"></i>
+                      <h4>PWA-Style Frontend</h4>
+                      <p>Next.js + Tailwind frontend built for mobile-first use directly from a shopper's own phone.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="system-features mt-4" data-aos="fade-up" data-aos-delay="800">
+                <h3>Technical Strengths</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <h4><i class="bi bi-bounding-box-circles"></i> Dataset From Scratch</h4>
+                    <ul>
+                      <li>Recorded product videos and extracted ~100 frames per class</li>
+                      <li>Hand-labelled bounding boxes in Roboflow</li>
+                      <li>Brightness, blur, and rotation augmentation for fluorescent-lighting robustness</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4><i class="bi bi-cpu-fill"></i> Training & Inference</h4>
+                    <ul>
+                      <li>YOLOv8n trained for 50 epochs on a Colab T4 GPU</li>
+                      <li>Confidence-threshold tuning (0.80) to balance recall and false positives</li>
+                      <li>pytest checks around the FastAPI inference and verification endpoints</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-demonstrated mt-4" data-aos="fade-up" data-aos-delay="900">
+                <h3>Skills Demonstrated</h3>
+                <ul class="skills-list">
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Custom Dataset Creation:</strong> Video capture, frame extraction, and Roboflow annotation for a from-scratch object-detection dataset.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Model Training:</strong> YOLOv8n training with augmentation tuned for a specific deployment environment.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Production Serving:</strong> FastAPI inference service with OpenCV image decoding and a confidence-threshold contract.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> <strong>Full-Stack Integration:</strong> Next.js frontend talking to a Python CV backend and a Supabase data layer.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Thatoe Nyi</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

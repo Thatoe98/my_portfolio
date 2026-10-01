@@ -226,4 +226,35 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * 3D tilt-on-hover for key cards
+   * Opt-in only for fine-pointer (mouse/trackpad) devices with no
+   * reduced-motion preference, so touch users and accessibility
+   * preferences are never affected.
+   */
+  const tiltSelector = '.profile-card, .skills-category, .resume-side, .services .service-card, .portfolio-wrap, .testimonials .testimonial-content';
+  const canTilt = window.matchMedia('(pointer: fine)').matches &&
+    !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (canTilt) {
+    document.querySelectorAll(tiltSelector).forEach(card => {
+      card.setAttribute('data-tilt', '');
+
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const px = (e.clientX - rect.left) / rect.width - 0.5;
+        const py = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.setProperty('--tilt-x', `${px * 10}deg`);
+        card.style.setProperty('--tilt-y', `${py * -10}deg`);
+        card.setAttribute('data-tilt-active', '');
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.removeAttribute('data-tilt-active');
+        card.style.removeProperty('--tilt-x');
+        card.style.removeProperty('--tilt-y');
+      });
+    });
+  }
+
 })();
